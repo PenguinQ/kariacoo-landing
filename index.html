@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Dashtomer</title>
+  </head>
+  <body>
+    <header class="w-full max-h-full flex fixed top-0 left-0 right-0 z-10 py-2 px-4">
+      <div class="w-full max-w-6xl max-h-full bg-linear-to-r from-blue-400 to-blue-900 rounded-lg overflow-hidden p-[1px] shadow-card mx-auto">
+        <div class="w-full h-full flex flex-col bg-white rounded-[inherit] px-4">
+          <div class="min-h-[54px] flex items-center justify-between">
+            <a href="/" class="w-[150px]">
+              <picture class="block">
+                <img src="./src/assets/images/logo.png" alt="Dashtomer header logo" class="w-full" />
+              </picture>
+            </a>
+            <nav class="header-nav header-nav--row">
+              <a href="#advantage" class="header-nav__link">Advantage</a>
+              <a href="#pricing" class="header-nav__link">Pricing</a>
+              <a href="#testimony" class="header-nav__link">Testimony</a>
+              <a href="#contact" class="header-nav__link">Contact</a>
+              <button type="button" class="button px-3 py-1">Get started</button>
+            </nav>
+            <button type="button" class="header-nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="header-nav header-nav--col">
+            <a href="#advantage" class="header-nav__link">Advantage</a>
+            <a href="#pricing" class="header-nav__link">Pricing</a>
+            <a href="#testimony" class="header-nav__link">Testimony</a>
+            <a href="#contact" class="header-nav__link">Contact</a>
+            <button type="button" class="button px-3 py-2">Get started</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+    <main>
+      <section id="intro" class="h-[100vh] p-4 mx-auto">
+        <div id="intro-container" class="h-full bg-linear-to-r from-blue-400 to-blue-900 shadow-card text-white rounded-[8px] flex flex-col items-center justify-center relative overflow-hidden p-[16px]">
+          <div class="max-w-2xl relative">
+            <h1 id="intro-title" class="font-heading text-center text-[2rem] md:text-[3.5rem] mb-[16px]">
+              Supercharge Your Customer Experience 🔥
+            </h1>
+            <h2 class="font-body text-[1rem] text-center md:text-[1.2rem]">
+              Dashtomer elevating your customers experience by providing intelligent AI chatbot that delights your existing customer success team and your customer base.
+            </h2>
+            <!--  -->
+            <div class="intro-chat">
+              <div class="intro-chat__avatar">🤖</div>
+              <div class="intro-chat__bubble">
+                <p id="intro-chat-text" class="intro-chat__text"></p>
+                <span class="inline-block w-[2px] h-[1lh] bg-black animate-cursor-blink"></span>
+              </div>
+            </div>
+          </div>
+          <button type="button" id="intro-next" class="intro-next" data-target="#advantage">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </section>
+      <!--  -->
+      <section id="advantage" class="section-dotted px-4 py-8 md:py-16">
+        <div class="max-w-4xl mx-auto">
+          <h3 class="section-title text-center">Our Advantages</h3>
+          <h4 class="section-subtitle text-center">What sets us apart from the competition</h4>
+          <div class="advantage-list">
+            <div class="advantage-list-item">
+              <div class="advantage-list-item__heading">
+                <div class="advantage-list-item__emoji">⚡</div>
+                <div class="advantage-list-item__title">Speedy</div>
+              </div>
+              <p class="advantage-list-item__description">
+                Lightning-fast loading times that enhance your brand's reputation and keep customers engaged.
+              </p>
+            </div>
+            <div class="advantage-list-item">
+              <div class="advantage-list-item__heading">
+                <div class="advantage-list-item__emoji">🎨</div>
+                <div class="advantage-list-item__title">Customizable</div>
+              </div>
+              <p class="advantage-list-item__description">
+                Seamlessly adapts to your brand's visual identity, creating a cohesive customer experience.
+              </p>
+            </div>
+            <div class="advantage-list-item">
+              <div class="advantage-list-item__heading">
+                <div class="advantage-list-item__emoji">📱</div>
+                <div class="advantage-list-item__title">Fully Responsive</div>
+              </div>
+              <p class="advantage-list-item__description">
+                Perfect performance across all devices—from smartphones to desktop computers.
+              </p>
+            </div>
+            <div class="advantage-list-item">
+              <div class="advantage-list-item__heading">
+                <div class="advantage-list-item__emoji">🔍</div>
+                <div class="advantage-list-item__title">Retina-sharp Design</div>
+              </div>
+              <p class="advantage-list-item__description">
+                Crisp, professional visuals that make a lasting impression and strengthen brand recognition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="pricing" class="px-4 py-8 md:py-16">
+        <div class="max-w-6xl mx-auto">
+          <h3 class="section-title text-center bg-gradient-to-r from-blue-400 to-blue-900">Straightforward Pricing, according to your needs</h3>
+          <h4 class="section-subtitle text-center">Start from ChatterBot plan, then scale accordingly</h4>
+          <div class="swiper pricing-list !px-[16px] !pb-[16px] mt-12 !mb-[-16px] !mx-[-16px]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pricing-list-item">
+                  <div>
+                    <h5 class="pricing-list-item__title">ChatterBot</h5>
+                    <p class="pricing-list-item__description">Talk like one of your best friend.</p>
+                    <div class="pricing-list-item__price">
+                      <span>Rp499,000</span>
+                      <span>/ month</span>
+                    </div>
+                    <button type="button" class="button button--full">Get Started</button>
+                    <hr />
+                    <ul class="pricing-list-item__details">
+                      <li>500 monthly active users</li>
+                      <li>5000 monthly conversations</li>
+                      <li>3 customizable chat flows</li>
+                      <li>Basic analytics dashboard</li>
+                      <li>Email support (48-hour response time)</li>
+                      <li>Standard chatbot templates</li>
+                      <li>Basic brand customization</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pricing-list-item">
+                  <div>
+                    <h5 class="pricing-list-item__title">ConvoGenius</h5>
+                    <p class="pricing-list-item__description">When you need more personality.</p>
+                    <div class="pricing-list-item__price">
+                      <span>Rp999,999</span>
+                      <span>/ month</span>
+                    </div>
+                    <button type="button" class="button button--full">Get Started</button>
+                    <hr />
+                    <ul class="pricing-list-item__details">
+                      <li>2,500 monthly active users</li>
+                      <li>25,000 monthly conversations</li>
+                      <li>10 customizable chat flows</li>
+                      <li>Advanced analytics with user journey mapping</li>
+                      <li>Priority email support (24-hour response time)</li>
+                      <li>Live chat support during business hours</li>
+                      <li>Custom widget design</li>
+                      <li>Basic integrations (CRM, help desk)</li>
+                      <li>A/B testing capabilities</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pricing-list-item">
+                  <div>
+                    <h5 class="pricing-list-item__title">DialogueMaster</h5>
+                    <p class="pricing-list-item__description">Talk to your own personal butler.</p>
+                    <div class="pricing-list-item__price">
+                      <span>Rp1,499,999</span>
+                      <span>/ month</span>
+                    </div>
+                    <button type="button" class="button button--full">Get Started</button>
+                    <hr />
+                    <ul class="pricing-list-item__details">
+                      <li>10,000 monthly active users</li>
+                      <li>100,000 monthly conversations</li>
+                      <li>Unlimited chat flows</li>
+                      <li>AI-powered conversation suggestions</li>
+                      <li>Comprehensive analytics with conversion tracking</li>
+                      <li>24/7 priority support</li>
+                      <li>Advanced integrations (e-commerce, payment processors)</li>
+                      <li>Multi-language support (up to 5 languages)</li>
+                      <li>Sentiment analysis</li>
+                      <li>Custom AI training capabilities</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pricing-list-item">
+                  <div>
+                    <h5 class="pricing-list-item__title">OmniChat</h5>
+                    <p class="pricing-list-item__description">Everything, all in one.</p>
+                    <div class="pricing-list-item__price">
+                      <span>Custom</span>
+                    </div>
+                    <button type="button" class="button button--full from-neutral-500 to-black">Contact Us</button>
+                    <hr />
+                    <ul class="pricing-list-item__details">
+                      <li>Unlimited monthly active users</li>
+                      <li>Unlimited conversations</li>
+                      <li>Dedicated account manager</li>
+                      <li>Custom AI model training</li>
+                      <li>White-label solution</li>
+                      <li>Full API access</li>
+                      <li>Advanced security features (SOC 2, HIPAA compliance)</li>
+                      <li>Multi-department routing</li>
+                      <li>Voice integration capabilities</li>
+                      <li>Custom integrations</li>
+                      <li>Omnichannel deployment (website, mobile, social)</li>
+                      <li>Enterprise-grade SLA</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="testimony" class="section-dotted px-4 py-8 md:py-16">
+        <div class="max-w-3xl flex flex-col md:flex-row items-center justify-center gap-12 mx-auto">
+          <div class="max-w-lg">
+            <h3 class="section-title text-center md:text-left">What our Clients Says</h3>
+            <h4 class="section-subtitle text-center md:text-left before:content-none mb-0">Discover how businesses of all sizes across Indonesia are transforming their customer experience with our AI chatbot solution.</h4>
+          </div>
+          <div class="rotate-3">
+            <div class="swiper testimonial-list !px-[16px] !py-[16px] !mx-[-16px] !my-[-16px]">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-list-item">
+                    <i class="fa-solid fa-quote-right testimonial-list-item__decoration"></i>
+                    <div class="testimonial-list-item__header flex items-center">
+                      <div class="testimonial-list-item__emoji">👨‍💼</div>
+                      <div>
+                        <div class="testimonial-list-item__name">Ahmad R</div>
+                        <div class="testimonial-list-item__plan">DialogueMaster</div>
+                      </div>
+                    </div>
+                    <div class="testimonial-list-item__review">
+                      DialogueMaster Pro transformed our customer service operations completely. The AI-powered conversation suggestions helped us reduce response times by 40%, and the sentiment analysis gives us actionable insights about customer satisfaction. Worth every rupiah we invest monthly.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-list-item">
+                    <i class="fa-solid fa-quote-right testimonial-list-item__decoration"></i>
+                    <div class="testimonial-list-item__header flex items-center">
+                      <div class="testimonial-list-item__emoji">👩‍🏫</div>
+                      <div>
+                        <div class="testimonial-list-item__name">Siti M</div>
+                        <div class="testimonial-list-item__plan">ConvoGenius</div>
+                      </div>
+                    </div>
+                    <div class="testimonial-list-item__review">
+                      As a small business owner, ConvoGenius offers the perfect balance of features and affordability. The A/B testing capabilities helped us optimize our customer journey, resulting in a 25% increase in sales conversions. Excellent support team too!
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-list-item">
+                    <i class="fa-solid fa-quote-right testimonial-list-item__decoration"></i>
+                    <div class="testimonial-list-item__header flex items-center">
+                      <div class="testimonial-list-item__emoji">🧑‍💻</div>
+                      <div>
+                        <div class="testimonial-list-item__name">Budi T</div>
+                        <div class="testimonial-list-item__plan">ChatterBot</div>
+                      </div>
+                    </div>
+                    <div class="testimonial-list-item__review">
+                      ChatterBot plan was the perfect starting point for our startup. Easy to set up, affordable, and surprisingly powerful for the price point. We've seen customer satisfaction scores increase by 15% since implementation.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-list-item">
+                    <i class="fa-solid fa-quote-right testimonial-list-item__decoration"></i>
+                    <div class="testimonial-list-item__header flex items-center">
+                      <div class="testimonial-list-item__emoji">👩‍🔬</div>
+                      <div>
+                        <div class="testimonial-list-item__name">Indah W</div>
+                        <div class="testimonial-list-item__plan">OmniChat</div>
+                      </div>
+                    </div>
+                    <div class="testimonial-list-item__review">
+                      The customization options with OmniChat are unmatched. Our healthcare company needed HIPAA compliance and specialized AI training for medical inquiries. The dedicated account manager made our transition seamless. The investment has paid for itself in reduced staffing costs.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-list-item">
+                    <i class="fa-solid fa-quote-right testimonial-list-item__decoration"></i>
+                    <div class="testimonial-list-item__header flex items-center">
+                      <div class="testimonial-list-item__emoji">👨‍🍳</div>
+                      <div>
+                        <div class="testimonial-list-item__name">Darmawan J</div>
+                        <div class="testimonial-list-item__plan">ChatterBot</div>
+                      </div>
+                    </div>
+                    <div class="testimonial-list-item__review">
+                      Even the cheapest plan exceeded our expectations for our small restaurant. Setting up reservation confirmations and menu inquiries was straightforward. Customers love the instant responses, and we've seen fewer missed bookings. Planning to upgrade to ConvoGenius soon!
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-list-item">
+                    <i class="fa-solid fa-quote-right testimonial-list-item__decoration"></i>
+                    <div class="testimonial-list-item__header flex items-center">
+                      <div class="testimonial-list-item__emoji">👩‍💼</div>
+                      <div>
+                        <div class="testimonial-list-item__name">Ratna P</div>
+                        <div class="testimonial-list-item__plan">DialogueMaster</div>
+                      </div>
+                    </div>
+                    <div class="testimonial-list-item__review">
+                      The multi-language support in DialogueMaster has been a game-changer for our e-commerce business. We can now serve customers in Bahasa Indonesia, English, Japanese, Mandarin, and Arabic seamlessly. The analytics have helped us identify key areas to improve our product listings.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-list-item">
+                    <i class="fa-solid fa-quote-right testimonial-list-item__decoration"></i>
+                    <div class="testimonial-list-item__header flex items-center">
+                      <div class="testimonial-list-item__emoji">🧑‍🚀</div>
+                      <div>
+                        <div class="testimonial-list-item__name">Eko S</div>
+                        <div class="testimonial-list-item__plan">OmniChat</div>
+                      </div>
+                    </div>
+                    <div class="testimonial-list-item__review">
+                      As a tech company scaling rapidly across Southeast Asia, we needed an enterprise solution that could grow with us. OmniChat's omnichannel capabilities let our customers reach us wherever they are—website, WhatsApp, Instagram, or our mobile app. The white-label solution maintains our brand integrity across all touchpoints.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="contact" class="px-4 py-8 md:py-16">
+        <div class="contact-card">
+          <div class="contact-card__inner">
+            <h3 class="section-title from-white to-neutral-50 text-center">Convinced?</h3>
+            <h4 class="section-subtitle text-white text-center before:from-white before:to-neutral-50">Experience Dashtomer firsthand with a complimentary 2-week trial. We're confident you'll be hooked!</h4>
+            <button type="button" class="button from-white to-neutral-50 shadow-card block mx-auto">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-700">Get Started</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-neutral-50 px-4 py-12 shadow-inner">
+      <div class="max-w-6xl mx-auto">
+        <div class="w-full flex flex-col md:flex-row justify-between gap-8 md:gap-4">
+          <div class="max-w-[320px]">
+            <div class="mb-4">
+              <picture class="w-[180px] block mb-4">
+                <img src="./src/assets/images/logo.png" alt="Dashtomer footer logo" />
+              </picture>
+              <p>Dashtomer is a Customer Account Concierge system that supercharges your customer experience.</p>
+            </div>
+            <div class="footer-social-medias">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-sitemaps">
+            <div class="footer-sitemaps-item">
+              <div class="footer-sitemaps-item__title">Products</div>
+              <ul class="footer-sitemaps-item__list">
+                <li><a href="#">Concierge Bot</a></li>
+              </ul>
+            </div>
+            <div class="footer-sitemaps-item">
+              <div class="footer-sitemaps-item__title">Company</div>
+              <ul class="footer-sitemaps-item__list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-sitemaps-item">
+              <div class="footer-sitemaps-item__title">Legal</div>
+              <ul class="footer-sitemaps-item__list">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-t-neutral-400 pt-4 mt-4">© 2025 Dashtomer</div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/80b23d5b82.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/main.ts"></script>
+  </body>
+</html>
