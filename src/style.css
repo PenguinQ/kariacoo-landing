@@ -179,11 +179,15 @@
 /* Intro section */
 .intro-chat {
   @apply
+    max-w-[420px]
+    min-h-[100px]
+    md:min-h-auto
     w-full
-    md:w-[420px]
     flex
+    items-start
     gap-4
     mt-8
+    mx-auto
     md:mt-0
     md:absolute
     md:bottom-[-32px]
@@ -221,9 +225,6 @@
     bg-white
     rounded-lg
     grow
-    self-center
-    flex
-    items-start
     overflow-hidden
     shadow-card
     p-4
@@ -233,7 +234,7 @@
 }
 
 .intro-chat__text {
-  @apply text-xs md:text-base;
+  @apply text-sm md:text-base;
 }
 
 .intro-next {

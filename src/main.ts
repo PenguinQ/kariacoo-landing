@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   for (const button of navButtons) {
-    button.addEventListener('click', (e) => {
+    button.addEventListener('click', () => {
       toggleMenuState(true);
     });
   }
