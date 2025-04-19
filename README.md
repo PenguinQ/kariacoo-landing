@@ -12,16 +12,7 @@ This is a redesign of current Dashtomer landing page.
    pnpm install
    ```
 
-2. Build the component by running:
-   ```
-   pnpm run build
-   
-   or
-
-   pnpm build
-   ```
-
-3. To preview, run:
+2. To preview, run:
    ```
    pnpm run dev
    
