@@ -1,8 +1,9 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-heading: "Quicksand", sans-serif;
-  --font-body: "Source Sans 3", sans-serif;
+  --font-hero           : "Paytone One", sans-serif;
+  --font-heading        : "Quicksand", sans-serif;
+  --font-body           : "Source Sans 3", sans-serif;
   --animate-cursor-blink: cursor-blink 1000ms infinite;
 
   @keyframes cursor-blink {
@@ -12,12 +13,21 @@
   }
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 @layer base {
   html {
     @apply font-body;
+    font-size: 16px;
     font-weight: normal;
     font-optical-sizing: auto;
     font-style: normal;
+  }
+
+  body {
+    background-color: #EFE5DC;
   }
 
   h1,

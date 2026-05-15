@@ -1,0 +1,52 @@
+<mjml>
+  <mj-head>
+    <mj-title>Selamat datang di Kariacoo</mj-title>
+    <mj-preview>Terima kasih sudah bergabung bersama kami.</mj-preview>
+    <mj-font name="Source Sans 3" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200..900&display=swap" />
+    <mj-font name="Quicksand" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="'Source Sans 3', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text font-size="14px" line-height="1.6" color="#1a1a1a" />
+    </mj-attributes>
+    <mj-style>
+      .heading { font-family: 'Quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif !important; }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#F4F4F4">
+    <mj-section background-color="#ffffff" padding="32px 32px 0 32px">
+      <mj-column>
+        <mj-image
+          src="https://kariacoo.net/logo@2x.png"
+          alt="Kariacoo"
+          width="160px"
+          href="https://kariacoo.net"
+          align="center"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="24px 32px 32px 32px">
+      <mj-column>
+        <mj-text
+          css-class="heading"
+          font-size="22px"
+          font-weight="bold"
+          font-family="'Quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif"
+          align="center"
+        >
+          Halo!
+        </mj-text>
+        <mj-text align="center">
+          Terima kasih sudah bergabung. Kamu akan jadi yang pertama tahu saat Kariacoo hadir &mdash; marketplace untuk kreator yang fokus bantu kamu jualan karya dengan mudah dan nyaman.
+        </mj-text>
+        <mj-text align="center">
+          Sampai jumpa di hari peluncuran!
+        </mj-text>
+        <mj-text align="center" padding-top="16px">
+          Salam,<br />
+          Tim Kariacoo
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
